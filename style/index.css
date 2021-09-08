@@ -65,6 +65,33 @@ blockquote, q {
     background: linear-gradient(90deg, rgba(2,0,36,1) 27%, rgba(21,21,93,1) 69%, rgba(64,64,103,1) 100%);
  }
 
+/* Adaptive Layout */
+.container {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 20px;
+  }
+  
+  @media(max-width: 500px) {
+    .container {
+      width: 500px;
+      background: gray;
+    }
+  
+    .container header nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+   &nbsp;.container header nav a {
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+
  /* header */
  header h1 {
      display: flex;
